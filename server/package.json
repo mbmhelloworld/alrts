@@ -1,0 +1,53 @@
+{
+  "name": "alrtsbe",
+  "version": "1.0.0",
+  "description": "Displays Live Events and make Alerts for them",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dist/app.js",
+    "dev": "concurrently \"npm run watch:server\"",
+    "watch:server": "nodemon --watch 'src/**/*.ts' --exec 'ts-node' app.ts",
+    "build": "tsc"
+  },
+  "author": "Moritz Brunner",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "cron": "^2.3.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.0",
+    "mongo": "^0.1.0",
+    "mongoose": "^7.0.3",
+    "morgan": "^1.10.0",
+    "puppeteer": "^19.8.2",
+    "tslib": "^2.5.0",
+    "zone.js": "^0.13.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/cors": "^2.8.12",
+    "@types/cron": "^2.0.1",
+    "@types/jsonwebtoken": "^9.0.1",
+    "@types/morgan": "^1.9.4",
+    "@types/node": "^18.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.10.2",
+    "@typescript-eslint/parser": "^5.10.2",
+    "concurrently": "^7.2.0",
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb": "^19.0.3",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.29.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.5.1",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.5"
+  }
+}
